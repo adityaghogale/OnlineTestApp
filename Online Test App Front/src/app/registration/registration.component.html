@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+  
+<div class="header">
+  <a class="logo"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Online Test Application</a>
+  </div>
+    <div id="login">
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-5">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" #registerForm="ngForm" (submit)="validate()" method="post">
+                            <h3 class="text-center text-info">Registration</h3>
+                            
+                                <label for="username" class="text-info">Username:</label><br>
+                                <input type="text" name="username" id="username" class="form-control" placeholder="Enter username" onfocus="this.userName=''" value="Enter Username"  [(ngModel)]="userName" #uname="ngModel" required>
+                                <div *ngIf="uname.invalid && (uname.dirty || uname.touched)">
+                                    <div *ngIf="uname.errors.required">
+                                        <span class="alert alert-danger"> Username is required!!</span>
+                                  </div> </div>
+                                <label for="password" class="text-info">Password:</label><br>
+                                <input type="password" name="password" id="password"  class="form-control" placeholder="Enter password" onfocus="this.userPassword=''" value="Enter Password" [(ngModel)]="userPassword" #upass="ngModel"  pattern="[A-Za-z1-5]{4,}" required><br>
+                                <div *ngIf="upass.invalid && (upass.dirty || upass.touched)">
+                                    <div *ngIf="upass.errors.pattern">
+                                        <span class="alert alert-danger"> Password should be atleast 4 characters!!</span>
+                                  </div>
+                                    <div *ngIf="upass.errors.required">
+                                        <span class="alert alert-danger"> Password is required!!</span>
+                                  </div> </div>
+                                  
+                                  <label for="confirm_password" class="text-info">Confirm Password:</label><br>
+                                <input type="password" name="cnf_password" id="cnf_password"  class="form-control" placeholder="Enter password" onfocus="this.userCnfPassword=''" value="Enter Password" [(ngModel)]="userCnfPassword" #ucnfpass="ngModel"  pattern="[A-Za-z1-5]{4,}" required><br>
+                                <div *ngIf="ucnfpass.invalid && (ucnfpass.dirty || ucnfpass.touched)">
+                                    <div *ngIf="ucnfpass.errors.pattern">
+                                        <span class="alert alert-danger"> Password should be atleast 4 characters!!</span>
+                                  </div>
+                                    <div *ngIf="ucnfpass.errors.required">
+                                        <span class="alert alert-danger"> Password is required!!</span>
+                                  </div> </div>
+                                  
+                                <label for="email" class="text-info">Email :</label><br>
+                                <input type="email" name="email" id="email"  class="form-control" placeholder="Enter user email" onfocus="this.email=''" value="Enter Email" [(ngModel)]="email" #uemail="ngModel" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" required><br>
+                                <div *ngIf="uemail.invalid && (uemail.dirty || uemail.touched)">
+                                    <div *ngIf="uemail.errors.pattern">
+                                        <span class="alert alert-danger"> Email should be in proper format!!</span>
+                                  </div> 
+                                  <div *ngIf="uemail.errors.required">
+                                        <p class="alert alert-danger"> Email is required!</p>
+                                  </div>
+                                  </div>
+                                <input type="submit" name="submit" class="btn btn-success btn-md" value="submit"> &nbsp;
+                                <input type="reset" value="reset" class="btn btn-danger btn-md">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

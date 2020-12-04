@@ -1,0 +1,34 @@
+<app-menu></app-menu>
+<br><br><br>
+<div class="container">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<table class="table table-dark">
+    <tr>
+      <th>testIdInteger</th>
+      <th>testTitle</th>
+      <th>testDuration</th>
+      <th>testTotalMarks</th>
+      <th>startTime</th>
+      <th>endTime No</th>
+      
+    </tr>
+  
+  
+    <tr *ngFor="let te1 of te">
+      <td>{{te1.testIdInteger}}</td>
+      <td>{{te1.testTitle}}</td>
+      <td>{{te1.testDuration}}</td>
+      <td>{{te1.testTotalMarks}}</td>  
+      <td>{{te1.startTime}}</td>
+      <td>{{te1.endTime}}</td>
+      <td><input type="number" placeholder="User Id" class="form-control" required [(ngModel)]="uId" > &nbsp;</td>
+  <td><button class="btn btn-primary" (click)="assign(te1.testIdInteger)" >Assign</button></td>
+      
+      
+      <!-- <td><button class="btn btn-warning" (click)="updateProp(prop.propertyId)" >Update</button></td> -->
+      <!-- <td><button class="btn btn-warning"  (click)="updateProp(pro)"  >Update</button></td>
+    </tr>
+    <td><button class="btn btn-warning"  (click)="goback()"  >Go Back</button></td> -->
+    </tr>
+  </table>

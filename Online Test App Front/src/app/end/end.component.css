@@ -1,0 +1,17 @@
+/*.resultDiv{
+    align-self: center;
+    padding-right: 1cm;
+    padding-top: 1cm;
+    height: 100px;
+    width: 500px;
+    border: 0.1em black;
+    border-style: solid;
+}*/
+
+.resultDiv {
+    display: flex;
+    justify-content: center;
+    border: 0.1em black;
+    border-style: solid;
+    width: 500px;
+  }

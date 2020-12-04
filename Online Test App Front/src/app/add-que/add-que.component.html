@@ -1,0 +1,61 @@
+
+<app-menu></app-menu>
+<br><br><br>
+<form (ngSubmit)="saveQue()" #addForm=ngForm class="needs-validation">
+  <div class="container">
+
+  
+
+  <label>questionTitle.</label>
+  <input name="questionTitle" class="form-control" [(ngModel)]="que.questionTitle" #questionTitle=ngModel >
+  <div *ngIf="questionTitle.touched && questionTitle.dirty && questionTitle.invalid" class="alert alert-danger">
+    questionTitle is not valid
+  </div>
+
+  <label>option1.</label>
+  <input name="option1" class="form-control" [(ngModel)]="que.option1" #option1=ngModel >
+  <div *ngIf="option1.touched && option1.dirty && option1.invalid" class="alert alert-danger">
+    questionTitle is not valid
+
+  </div>
+  <label>option2.</label>
+  <input name="option2" class="form-control" [(ngModel)]="que.option2" #option2=ngModel >
+  <div *ngIf="option2.touched && option2.dirty && option2.invalid" class="alert alert-danger">
+    option2 is not valid
+
+  </div>
+  <label>option3.</label>
+  <input name="option3" class="form-control" [(ngModel)]="que.option3" #option3=ngModel >
+  <div *ngIf="option3.touched && option3.dirty && option3.invalid" class="alert alert-danger">
+    option3 is not valid
+
+  </div>
+  <label>option4.</label>
+  <input name="option4" class="form-control" [(ngModel)]="que.option4" #option4=ngModel >
+  <div *ngIf="option4.touched && option4.dirty && option4.invalid" class="alert alert-danger">
+    option4 is not valid
+
+  </div>
+
+
+  <label>questionAnswer.</label>
+  <input name="questionAnswer" class="form-control" [(ngModel)]="que.questionAnswer" #questionAnswer=ngModel >
+  <!--form-control is bootstrap class for attractive fields ngModel links to .ts-->
+  <div *ngIf="questionAnswer.touched && questionAnswer.dirty && questionAnswer.invalid" class="alert alert-danger">
+    questionAnswer is not valid
+  </div>
+
+  
+
+ 
+
+  
+
+  
+
+  
+  <br>
+
+  <button type="submit" class="btn btn-primary" [disabled] ="!addForm.valid" >Add Question</button>
+</div>
+</form>

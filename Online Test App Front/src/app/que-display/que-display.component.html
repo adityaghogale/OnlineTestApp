@@ -1,0 +1,33 @@
+<br><br><br>
+<div class="container">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <table class="table table-dark">
+    <div>Minutes Remaining : {{counter}}</div>
+    <div>Seconds Remaining : {{counter1}}</div>
+    <tr>
+    <td>questionId</td>
+    <td>questionTitle</td>
+    <td>option1</td>
+    <td>option2</td>
+    <td>option3</td>
+    <td>option4</td>
+    
+    </tr>
+    <tr *ngFor="let e of que">
+    <td>{{e.questionId}}</td>
+    <td>{{e.questionTitle}}</td>
+    <td><input type="radio"  (click)="setradio('1')"   ngModel name={{e.questionId}} value="1">{{e.option1}}</td>
+    <td><input type="radio" (click)="setradio('2')" ngModel name={{e.questionId}} value="2">{{e.option2}}</td>
+	  <td><input type="radio" (click)="setradio('3')" ngModel name={{e.questionId}} value="3">{{e.option3}}</td>
+    <td><input type="radio" (click)="setradio('4')" ngModel name={{e.questionId}} value="4">{{e.option4}}</td> 
+    <td><button class="btn btn-warning"  (click)="SaveAns(e.questionId)"  >Save Ans</button></td>
+    
+   
+    </tr>
+
+  
+</table>
+<!-- 
+<td><button class="btn btn-warning"  (click)="SubmitTest()"  >Submit Test</button></td> -->
+<td><button class="btn btn-warning"  (click)="CalculateResult()"  >Calculate Result</button></td>

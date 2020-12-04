@@ -1,0 +1,34 @@
+<app-menu></app-menu>
+<br><br><br>
+<div class="container">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<table class="table table-dark">
+    <tr>
+      <th>Question Id</th>
+      <th>Question title</th>
+      <th>option 1</th>
+      <th>option 2</th>
+      <th>option 3</th>
+      <th>option 4</th>
+      <th>Answer</th>
+    </tr>
+  
+  
+    <tr *ngFor="let te1 of queList">
+      <td>{{te1.questionId}}</td>
+      <td>{{te1.questionTitle}}</td>
+      <td>{{te1.option1}}</td>
+      <td>{{te1.option2}}</td>  
+      <td>{{te1.option3}}</td> 
+      <td>{{te1.option4}}</td> 
+      <td>{{te1.questionAnswer}}</td>
+      
+      
+      
+      <!-- <td><button class="btn btn-warning" (click)="updateProp(prop.propertyId)" >Update</button></td> -->
+      <!-- <td><button class="btn btn-warning"  (click)="updateProp(pro)"  >Update</button></td>
+    </tr>
+    <td><button class="btn btn-warning"  (click)="goback()"  >Go Back</button></td> -->
+    </tr>
+  </table>

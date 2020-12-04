@@ -1,0 +1,29 @@
+<app-menu></app-menu>
+<br><br><br>
+<form (ngSubmit)="saveMap()" #addForm=ngForm class="needs-validation">
+  <div class="container">
+
+
+
+  <label>testId</label>
+  <input name="testId" class="form-control" [(ngModel)]="m.testId" #testId=ngModel >
+  <!--form-control is bootstrap class for attractive fields ngModel links to .ts-->
+  <div *ngIf="testId.touched && testId.dirty && testId.invalid" class="alert alert-danger">
+    testId is not valid
+  </div>
+
+  <label>queId</label>
+  <input name="queId" class="form-control" [(ngModel)]="m.queId" #queId=ngModel >
+  <!--form-control is bootstrap class for attractive fields ngModel links to .ts-->
+  <div *ngIf="queId.touched && queId.dirty && queId.invalid" class="alert alert-danger">
+    queId is not valid
+  </div>
+
+ 
+
+  
+  <br>
+
+  <button type="submit" class="btn btn-primary" [disabled] ="!addForm.valid" >Add MAP</button>
+</div>
+</form>

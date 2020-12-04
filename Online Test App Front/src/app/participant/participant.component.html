@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="container">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <i class="fa fa-user" aria-hidden="true"></i> &nbsp;<a class="navbar-brand" ><b>{{userName}}</b></a> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="topnav-right" >
+      <button class="btn btn-primary" (click)="logout()">Logout</button>
+    </div>
+  </nav>
+<table class="table table-dark">
+    <tr>
+     
+     
+      <th>testIdInteger</th>
+      <th>testTitle</th>
+     
+      
+    </tr>
+  
+  
+    <tr *ngFor="let test5 of test1">
+      <td>{{test5.testIdInteger}}</td>
+      <td>{{test5.testTitle}}</td>
+      <td><button class="btn btn-warning"  (click)="GiveTest(test5.testIdInteger)"  >GiveTest</button></td>
+     
+      <!-- <td><input type="number" placeholder="User Id" class="form-control" required [(ngModel)]="uId" > &nbsp;</td>
+  <td><button class="btn btn-primary" (click)="assign(te1.testIdInteger)" >Assign</button></td> -->
+      
+      
+      <!-- <td><button class="btn btn-warning" (click)="updateProp(prop.propertyId)" >Update</button></td> -->
+      <!-- <td><button class="btn btn-warning"  (click)="updateProp(pro)"  >Update</button></td>
+    </tr>
+     -->
+    </tr>
+  </table>

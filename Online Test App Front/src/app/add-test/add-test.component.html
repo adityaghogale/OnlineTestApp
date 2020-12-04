@@ -1,0 +1,61 @@
+<app-menu></app-menu>
+<br><br><br>
+<form (ngSubmit)="saveTest()" #addForm=ngForm class="needs-validation">
+  <div class="container">
+
+  
+
+  <label>Test title.</label>
+  <input name="testTitle" class="form-control" [(ngModel)]="te.testTitle" #testTitle=ngModel >
+  <div *ngIf="testTitle.touched && testTitle.dirty && testTitle.invalid" class="alert alert-danger">
+    Test title is not valid
+  </div>
+
+  <label>Test Duration.</label>
+  <input name="testDuration" class="form-control" [(ngModel)]="te.testDuration" #testDuration=ngModel >
+  <!--form-control is bootstrap class for attractive fields ngModel links to .ts-->
+  <div *ngIf="testDuration.touched && testDuration.dirty && testDuration.invalid" class="alert alert-danger">
+    Test Duration is not valid
+  </div>
+
+  <label>testTotalMarks</label>
+  <input name="testTotalMarks" class="form-control" [(ngModel)]="te.testTotalMarks" #testTotalMarks=ngModel >
+  <!--form-control is bootstrap class for attractive fields ngModel links to .ts-->
+  <div *ngIf="testTotalMarks.touched && testTotalMarks.dirty && testTotalMarks.invalid" class="alert alert-danger">
+    testTotalMarks is not valid
+  </div>
+
+ 
+
+  <label>startTime</label>
+  <input name="startTime" type="time" class="form-control" [(ngModel)]="te.startTime" #startTime=ngModel >
+  <!--form-control is bootstrap class for attractive fields ngModel links to .ts-->
+  <div *ngIf="startTime.touched && startTime.dirty && startTime.invalid" class="alert alert-danger">
+    startTime is not valid
+  </div>
+
+  <label>endTime</label>
+  <input name="endTime" type="time" class="form-control" [(ngModel)]="te.endTime" #endTime=ngModel >
+  <!--form-control is bootstrap class for attractive fields ngModel links to .ts-->
+  <div *ngIf="endTime.touched && endTime.dirty && endTime.invalid" class="alert alert-danger">
+    endTime is not valid
+  </div>
+
+  
+
+  <!-- <label>Product price.</label>
+  <input name="price" class="form-control" [(ngModel)]="product.price" #price=ngModel >
+  <div *ngIf="price.touched && price.dirty && price.invalid" class="alert alert-danger">
+    Product price is not valid
+  </div>
+
+  <label>Product category.</label>
+ <select [(ngModel)]="product.category" class="form-control" #category=ngModel name="category">
+ <option *ngFor="let c of cats"[value]="c">{{c}}</option>
+</select> -->
+  <br>
+
+  <button type="submit" class="btn btn-primary" [disabled] ="!addForm.valid" >Add Test</button>
+</div>
+</form>
+<router-outlet></router-outlet>
