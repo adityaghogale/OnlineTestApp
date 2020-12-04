@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cg.result.ResultServiceApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.521 s - in com.cg.result.ResultServiceApplicationTests

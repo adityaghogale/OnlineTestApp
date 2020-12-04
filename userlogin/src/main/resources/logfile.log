@@ -1,0 +1,316 @@
+2020-11-09 09:41:21.364  WARN 6308 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/userloginservice/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-11-09 09:41:21.381  INFO 6308 --- [restartedMain] com.cg.UserloginApplication              : No active profile set, falling back to default profiles: default
+2020-11-09 09:41:22.924  WARN 6308 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-09 09:41:24.218  WARN 6308 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-11-09 09:41:24.819  WARN 6308 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-11-09 09:41:25.084  WARN 6308 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-11-09 09:41:26.223  WARN 6308 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-09 09:41:27.803  INFO 6308 --- [restartedMain] com.cg.UserloginApplication              : Started UserloginApplication in 9.065 seconds (JVM running for 10.338)
+2020-11-09 09:44:49.912  INFO 6308 --- [http-nio-1111-exec-2] com.cg.controller.UserLoginController    : adi logged in
+2020-11-09 10:07:40.008  INFO 6308 --- [http-nio-1111-exec-4] com.cg.controller.UserLoginController    : panda logged in
+2020-11-09 10:08:07.604  INFO 6308 --- [http-nio-1111-exec-5] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 10:12:18.125  INFO 6308 --- [http-nio-1111-exec-7] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 10:14:17.255  INFO 6308 --- [http-nio-1111-exec-9] com.cg.controller.UserLoginController    : adi logged in
+2020-11-09 10:22:01.966  INFO 6308 --- [http-nio-1111-exec-1] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 10:23:45.505  INFO 6308 --- [http-nio-1111-exec-3] com.cg.controller.UserLoginController    : adi logged in
+2020-11-09 10:27:34.842  INFO 6308 --- [http-nio-1111-exec-5] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 10:29:52.345  INFO 6308 --- [http-nio-1111-exec-7] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 10:36:19.210  INFO 6308 --- [http-nio-1111-exec-9] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 10:38:33.536  INFO 6308 --- [http-nio-1111-exec-1] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 10:48:08.046  INFO 6308 --- [http-nio-1111-exec-3] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 10:49:21.982  INFO 6308 --- [http-nio-1111-exec-5] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 10:52:19.687  INFO 6308 --- [http-nio-1111-exec-7] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 10:53:44.616  INFO 6308 --- [http-nio-1111-exec-9] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 10:55:53.765  INFO 6308 --- [http-nio-1111-exec-1] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 11:00:06.734  INFO 6308 --- [http-nio-1111-exec-3] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 11:06:19.823  INFO 6308 --- [http-nio-1111-exec-5] com.cg.controller.UserLoginController    : adi logged in
+2020-11-09 11:08:41.496  INFO 6308 --- [http-nio-1111-exec-7] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 11:09:13.204  INFO 6308 --- [http-nio-1111-exec-8] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 11:09:39.175  INFO 6308 --- [http-nio-1111-exec-9] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 11:09:52.345  INFO 6308 --- [http-nio-1111-exec-10] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 11:20:12.069  INFO 6308 --- [http-nio-1111-exec-2] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 11:35:44.072  WARN 6308 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1604901944072, current=DOWN, previous=UP]
+2020-11-09 11:35:44.195  WARN 6308 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RibbonApacheHttpClientConfiguration.connectionManagerTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Unknown Source)
+ java.util.TimerThread.run(Unknown Source)
+2020-11-09 11:35:44.197  WARN 6308 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [NFLoadBalancer-PingTimer-logindataprovider] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Unknown Source)
+ java.util.TimerThread.run(Unknown Source)
+2020-11-09 11:35:44.198  WARN 6308 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-11-09 11:35:44.200  WARN 6308 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DataPublisher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-11-09 11:35:44.201  WARN 6308 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-11-09 12:09:23.141  WARN 8376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/userloginservice/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-11-09 12:09:23.145  INFO 8376 --- [restartedMain] com.cg.UserloginApplication              : No active profile set, falling back to default profiles: default
+2020-11-09 12:09:24.435  WARN 8376 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-09 12:09:25.669  WARN 8376 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-11-09 12:09:26.325  WARN 8376 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-11-09 12:09:26.526  WARN 8376 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'registrationController': Unsatisfied dependency expressed through field 'proxy'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.cg.proxy.LoginServiceProxy': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Method LoginServiceProxy#getAllUsers() not annotated with HTTP method type (ex. GET, POST)
+Warnings:
+- 
+2020-11-09 12:09:26.639 ERROR 8376 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'registrationController': Unsatisfied dependency expressed through field 'proxy'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.cg.proxy.LoginServiceProxy': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Method LoginServiceProxy#getAllUsers() not annotated with HTTP method type (ex. GET, POST)
+Warnings:
+- 
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at com.cg.UserloginApplication.main(UserloginApplication.java:18) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_271]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_271]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_271]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_271]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.cg.proxy.LoginServiceProxy': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Method LoginServiceProxy#getAllUsers() not annotated with HTTP method type (ex. GET, POST)
+Warnings:
+- 
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:176) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1828) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1265) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1532) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1489) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1270) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: Method LoginServiceProxy#getAllUsers() not annotated with HTTP method type (ex. GET, POST)
+Warnings:
+- 
+	at feign.Util.checkState(Util.java:129) ~[feign-core-10.10.1.jar:na]
+	at feign.Contract$BaseContract.parseAndValidateMetadata(Contract.java:100) ~[feign-core-10.10.1.jar:na]
+	at org.springframework.cloud.openfeign.support.SpringMvcContract.parseAndValidateMetadata(SpringMvcContract.java:194) ~[spring-cloud-openfeign-core-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at feign.Contract$BaseContract.parseAndValidateMetadata(Contract.java:62) ~[feign-core-10.10.1.jar:na]
+	at feign.ReflectiveFeign$ParseHandlersByName.apply(ReflectiveFeign.java:151) ~[feign-core-10.10.1.jar:na]
+	at feign.ReflectiveFeign.newInstance(ReflectiveFeign.java:49) ~[feign-core-10.10.1.jar:na]
+	at feign.Feign$Builder.target(Feign.java:269) ~[feign-core-10.10.1.jar:na]
+	at org.springframework.cloud.openfeign.HystrixTargeter.target(HystrixTargeter.java:38) ~[spring-cloud-openfeign-core-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.loadBalance(FeignClientFactoryBean.java:301) ~[spring-cloud-openfeign-core-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:330) ~[spring-cloud-openfeign-core-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:310) ~[spring-cloud-openfeign-core-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:169) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	... 36 common frames omitted
+
+2020-11-09 12:10:21.427  WARN 9732 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/userloginservice/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-11-09 12:10:21.433  INFO 9732 --- [restartedMain] com.cg.UserloginApplication              : No active profile set, falling back to default profiles: default
+2020-11-09 12:10:22.690  WARN 9732 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-09 12:10:23.878  WARN 9732 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-11-09 12:10:24.389  WARN 9732 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-11-09 12:10:24.526  WARN 9732 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'registrationController': Unsatisfied dependency expressed through field 'proxy'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.cg.proxy.LoginServiceProxy': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Method LoginServiceProxy#getAllUsers() not annotated with HTTP method type (ex. GET, POST)
+Warnings:
+- 
+2020-11-09 12:10:24.580 ERROR 9732 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'registrationController': Unsatisfied dependency expressed through field 'proxy'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.cg.proxy.LoginServiceProxy': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Method LoginServiceProxy#getAllUsers() not annotated with HTTP method type (ex. GET, POST)
+Warnings:
+- 
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at com.cg.UserloginApplication.main(UserloginApplication.java:18) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_271]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_271]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_271]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_271]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.cg.proxy.LoginServiceProxy': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Method LoginServiceProxy#getAllUsers() not annotated with HTTP method type (ex. GET, POST)
+Warnings:
+- 
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:176) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1828) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1265) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1532) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1489) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1270) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: Method LoginServiceProxy#getAllUsers() not annotated with HTTP method type (ex. GET, POST)
+Warnings:
+- 
+	at feign.Util.checkState(Util.java:129) ~[feign-core-10.10.1.jar:na]
+	at feign.Contract$BaseContract.parseAndValidateMetadata(Contract.java:100) ~[feign-core-10.10.1.jar:na]
+	at org.springframework.cloud.openfeign.support.SpringMvcContract.parseAndValidateMetadata(SpringMvcContract.java:194) ~[spring-cloud-openfeign-core-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at feign.Contract$BaseContract.parseAndValidateMetadata(Contract.java:62) ~[feign-core-10.10.1.jar:na]
+	at feign.ReflectiveFeign$ParseHandlersByName.apply(ReflectiveFeign.java:151) ~[feign-core-10.10.1.jar:na]
+	at feign.ReflectiveFeign.newInstance(ReflectiveFeign.java:49) ~[feign-core-10.10.1.jar:na]
+	at feign.Feign$Builder.target(Feign.java:269) ~[feign-core-10.10.1.jar:na]
+	at org.springframework.cloud.openfeign.HystrixTargeter.target(HystrixTargeter.java:38) ~[spring-cloud-openfeign-core-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.loadBalance(FeignClientFactoryBean.java:301) ~[spring-cloud-openfeign-core-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:330) ~[spring-cloud-openfeign-core-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:310) ~[spring-cloud-openfeign-core-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:169) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	... 36 common frames omitted
+
+2020-11-09 12:12:10.369  WARN 3936 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/userloginservice/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-11-09 12:12:10.376  INFO 3936 --- [restartedMain] com.cg.UserloginApplication              : No active profile set, falling back to default profiles: default
+2020-11-09 12:12:11.600  WARN 3936 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-09 12:12:12.784  WARN 3936 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-11-09 12:12:13.299  WARN 3936 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-11-09 12:12:13.486  WARN 3936 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-11-09 12:12:14.531  WARN 3936 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-09 12:12:16.086  INFO 3936 --- [restartedMain] com.cg.UserloginApplication              : Started UserloginApplication in 8.24 seconds (JVM running for 9.363)
+2020-11-09 12:15:13.483  INFO 3936 --- [http-nio-1111-exec-4] com.cg.controller.UserLoginController    : adi logged in
+2020-11-09 12:21:53.442  INFO 3936 --- [http-nio-1111-exec-9] com.cg.controller.UserLoginController    : adi logged in
+2020-11-09 12:28:59.526  WARN 3936 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1604905139526, current=DOWN, previous=UP]
+2020-11-09 12:28:59.690  WARN 3936 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RibbonApacheHttpClientConfiguration.connectionManagerTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Unknown Source)
+ java.util.TimerThread.run(Unknown Source)
+2020-11-09 12:28:59.693  WARN 3936 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [NFLoadBalancer-PingTimer-logindataprovider] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Unknown Source)
+ java.util.TimerThread.run(Unknown Source)
+2020-11-09 12:28:59.695  WARN 3936 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-11-09 12:28:59.697  WARN 3936 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DataPublisher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-11-09 12:28:59.700  WARN 3936 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-11-09 16:49:37.745  WARN 3464 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/userloginservice/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-11-09 16:49:37.749  INFO 3464 --- [restartedMain] com.cg.UserloginApplication              : No active profile set, falling back to default profiles: default
+2020-11-09 16:49:38.969  WARN 3464 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-09 16:49:40.212  WARN 3464 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-11-09 16:49:40.843  WARN 3464 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-11-09 16:49:41.045  WARN 3464 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-11-09 16:49:42.088  WARN 3464 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-09 16:49:43.552  INFO 3464 --- [restartedMain] com.cg.UserloginApplication              : Started UserloginApplication in 8.417 seconds (JVM running for 9.571)
+2020-11-09 16:52:33.298  INFO 3464 --- [http-nio-1111-exec-1] com.cg.controller.UserLoginController    : adi logged in
+2020-11-09 16:55:04.633  INFO 3464 --- [http-nio-1111-exec-5] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 16:55:13.408  INFO 3464 --- [http-nio-1111-exec-6] com.cg.controller.UserLoginController    : adi logged in
+2020-11-09 17:26:36.247  INFO 3464 --- [http-nio-1111-exec-3] com.cg.controller.UserLoginController    : adi logged in
+2020-11-09 17:43:51.490  INFO 3464 --- [http-nio-1111-exec-7] com.cg.controller.UserLoginController    : adi logged in
+2020-11-09 17:44:19.653  INFO 3464 --- [http-nio-1111-exec-8] com.cg.controller.UserLoginController    : garp logged in
+2020-11-09 18:13:09.764  WARN 3464 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1604925789764, current=DOWN, previous=UP]
+2020-11-09 18:13:10.082  WARN 3464 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RibbonApacheHttpClientConfiguration.connectionManagerTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Unknown Source)
+ java.util.TimerThread.run(Unknown Source)
+2020-11-09 18:13:10.082  WARN 3464 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [NFLoadBalancer-PingTimer-logindataprovider] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Unknown Source)
+ java.util.TimerThread.run(Unknown Source)
+2020-11-09 18:13:10.082  WARN 3464 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-11-09 18:13:10.082  WARN 3464 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DataPublisher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-11-09 18:13:10.082  WARN 3464 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
